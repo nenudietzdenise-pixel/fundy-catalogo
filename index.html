@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundy | Catálogo</title>
+  <meta name="description" content="Catálogo de Fundy - fundas para celulares">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">FUNDY<span>♡</span></div>
+    <a class="instagram" href="https://www.instagram.com/fundy.arg/" id="instagramLink">Instagram</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">CATÁLOGO ONLINE</p>
+      <h1>Encontrá tu funda<br><em>favorita.</em></h1>
+      <p class="hero-text">Elegí tu modelo y mirá las fundas disponibles.</p>
+      <a href="#catalogo" class="primary-btn">Ver catálogo</a>
+    </section>
+
+    <section id="catalogo" class="catalog">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">FUNDAS DISPONIBLES</p>
+          <h2>iPhone 15</h2>
+        </div>
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Buscar funda..." aria-label="Buscar funda">
+        </div>
+      </div>
+      <div id="grid" class="grid"></div>
+      <p id="empty" class="empty" hidden>No encontramos esa funda.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">FUNDY<span>♡</span></div>
+    <p>Fundas que hacen match con vos.</p>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="closeModal"></div>
+    <div class="modal-card">
+      <button class="close" id="closeBtn" aria-label="Cerrar">×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="modal-info">
+        <p class="eyebrow" id="modalModel"></p>
+        <h3 id="modalName"></h3>
+        <p id="modalPrice" class="price"></p>
+        <a id="whatsapp" class="primary-btn full" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
