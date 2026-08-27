@@ -30,10 +30,7 @@ function openProduct(p){
   document.getElementById("modalName").textContent = p.name;
   document.getElementById("modalPrice").textContent = p.price;
 
-  // REEMPLAZÁ ESTE NÚMERO POR TU WHATSAPP (código de país + número, sin + ni espacios)
-  const phone = "543493409001";
-  const message = encodeURIComponent(`Hola 💜 Quiero consultar por la funda "${p.name}" para ${p.model}.`);
-  document.getElementById("whatsapp").href = `https://wa.me/${phone}?text=${message}`;
+document.getElementById("whatsapp").href = "https://www.instagram.com/fundy.arg/";
 
   modal.classList.add("open");
   modal.setAttribute("aria-hidden","false");
